@@ -1,0 +1,171 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--background-color);
+}
+
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: var(--accent-color);
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03;
+}
+
+.footer-web-color {
+  color: var(--accent-filters-color);
+}
+
+.footer-address-list {
+  font-style: normal;
+}
+
+.footer-address-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer-address-list .footer-link-address {
+  color: var(--accent-filters-color);
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+}
+
+.footer-link-tel {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--link-list-color);
+}
+
+.footer-link-tel:hover,
+.footer-link-tel:focus {
+  color: var(--accent-color);
+}
+
+.footer-link-mail {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--address-list-color);  
+}
+
+.footer-link-mail:hover,
+.footer-link-mail:focus {
+  color: var(--accent-color);
+}
+
+/*-------footer socials icon---------*/
+ 
+.footer-container {
+  display: flex;
+  align-items: baseline;     
+}
+
+.footer-socials {
+  margin-left: 70px;
+}
+
+.footer-socials-title {
+  margin-bottom: 20px;
+  color: var(--accent-filters-color);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.footer-socials-list {
+  display: flex;
+}
+
+.footer-socials-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--footer-icon-color);
+  color: var(--accent-filters-color);
+}
+
+.footer-socials-link:hover,
+.footer-socials-link:focus {
+  background-color: var(--accent-color);
+}
+
+.footer-socials-item + .footer-socials-item {
+  margin-left: 10px;
+}
+
+.footer-socials-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+/*--------footer spam----------*/
+
+.footer-spam{   
+  margin-left: 93px; 
+  }
+
+.footer-spam-title {
+  display: flex;
+  margin-bottom: 20px;
+  color: var(--accent-filters-color);   
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;        
+}
+
+.footer-form {
+  display: flex;                 
+}
+
+.spam-email-input {
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+  width: 358px;
+  height: 50px;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: transparent;
+  border: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;      
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.25;    
+  letter-spacing: 0.03em;    
+  }         
+
+.spam-btn {      
+  display: inline-flex;
+  text-align: center;
+  align-items: center;
+  margin-left: 12px;
+  padding: 13px 28px;
+  width: 200px;
+  height: 50px;
+  color: var(--accent-filters-color);
+  background: var(--accent-color);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87; 
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);   
+}
+
+.spam-icon {    
+  margin-left: 10px;
+  color: var(--accent-filters-color);  
+}

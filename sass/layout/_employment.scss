@@ -1,0 +1,37 @@
+.employment-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .employment-item { 
+    margin-top: 0;
+    margin-right: 30px;
+  }
+  
+  .employment-item:nth-child(3n) {
+    margin-right: 0;
+  }
+  
+  .employment-overlay {
+    position: relative;
+    background-color: rgba(47, 48, 58, 0.8);
+    transform: translateY(-100%);
+    width: 370px;
+    height: 70px;
+    }
+  
+  .employment-overlay-text {
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+    padding: 27px 82px;   
+    color: var(--accent-filters-color);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    }
+  
