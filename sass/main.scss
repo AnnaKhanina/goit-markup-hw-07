@@ -1,7 +1,9 @@
 @import './utils/hidden';
-@import './utils/vars';
+@import './utils/variables';
 @import './base/common';
 @import './base/reset';
+@import './utils/placeholders';
+@import "./utils/mixins";
 
 @import './components/container';
 @import './components/title';
@@ -17,4 +19,3 @@
 @import './layout/portfilio';
 @import './layout/projects';
 @import './layout/footer';
-

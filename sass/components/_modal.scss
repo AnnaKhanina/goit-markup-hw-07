@@ -30,11 +30,7 @@
     height: 30px;
     background: var(--accent-filters-color);
     border: 1px solid rgba(0, 0, 0, 0.1);  
-    border-radius: 50%; 
-    &:hover .modal-close-icon,
-    &:focus .modal-close-icon {
-      fill: var(--accent-color);
-    }         
+    border-radius: 50%;             
   }
   
   .modal-close-icon {
@@ -42,15 +38,18 @@
     height: 11px;
     fill: #000000;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }        
+    .modal-close-btn:hover &,
+    .modal-close-btn:focus & {
+      fill: var(--accent-color);
+    }         
+  }       
     
   .modal-title {
     margin-bottom: 30px;
     color: var(--header-text-color);
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 1.15;
     text-align: center;
+    font-size: 20px;
+    line-height: 1.15;    
     letter-spacing: 0.03em;
   }
   
@@ -137,23 +136,22 @@
      } 
     &:checked + &-text svg {
       fill: var(--accent-filters-color);
-    } 
-    &:focus + &-text > span {
-      border-color: var(--accent-color);  
-    } 
+    }      
   }
    
+  .modal-check:focus + .modal-check-text > span {
+    border-color: var(--accent-color);  
+  }
+
   .modal-check-text {
-    display: flex;
-    align-items: center;
+    @extend %align-list;
     font-weight: normal;
     color: var(--link-list-color);
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;   
     & span {
-      display: flex;
-      align-items: center;
+      @extend %align-list;
       justify-content: center;
       margin-right: 8px;
       width: 16px;
@@ -164,8 +162,7 @@
   }
   
   .modal-check-link {
-    display: flex;
-    align-items: center;    
+    @extend %align-list;   
     padding: 5px;
     color: var(--accent-color);
     text-decoration: underline;
@@ -195,8 +192,7 @@
   }   
   
   .modal-btn-submit {
-    display: flex;
-    align-items: center;
+    @extend %align-list;
     text-align: center;
   }
   

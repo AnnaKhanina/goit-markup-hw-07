@@ -6,12 +6,11 @@
   .employment-item { 
     margin-top: 0;
     margin-right: 30px;
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
   }
-  
-  .employment-item:nth-child(3n) {
-    margin-right: 0;
-  }
-  
+     
   .employment-overlay {
     position: relative;
     background-color: rgba(47, 48, 58, 0.8);
