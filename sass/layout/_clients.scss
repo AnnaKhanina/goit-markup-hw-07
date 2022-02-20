@@ -12,11 +12,11 @@
   .clients-item {
     width: 170px;
     height: 92px;
+    & + & {
+      margin-left: 30px;
+    }
   }
   
-  .clients-item + .clients-item {
-    margin-left: 30px;
-  }
   
   .clients-link {
     display: flex;
@@ -29,13 +29,14 @@
     box-sizing: border-box;
     border: 1px solid var(--socials-icon-color);
     border-radius: 4px;
-  }
-  
-  .clients-link:hover,
-  .clients-link:focus  {
+    &:hover,
+    &:focus  {
     border-color: var(--accent-color);
     color: var(--accent-color);
+    }
   }
+  
+ 
   
   .clients-icon {
     width: 106px;
