@@ -22,10 +22,7 @@
     background-color: var(--background-color-secondary);
     border-color: transparent;    
     text-align: center;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    letter-spacing: 0.03em;
+    @include font (16px, 500, 26px, 0.03em);
     &:hover,
     &:focus {
       color: var(--accent-filters-color);

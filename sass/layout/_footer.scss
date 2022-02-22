@@ -13,11 +13,8 @@
   display: inline-block;
   margin-bottom: 20px;
   color: var(--accent-color);
-  font-family: Raleway;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03;
+  font-family: Raleway; 
+  @include font (26px, 700, 31px, 0.03em); 
 }
 
 .footer-web-color {
@@ -28,10 +25,7 @@
   font-style: normal;
   .footer-link-address {
     color: var(--accent-filters-color);
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 2;
-    letter-spacing: 0.03em;
+    @include font (14px, 500, 24px, 0.03em);     
   }
 }
 
@@ -41,10 +35,7 @@
 
 .footer-address-list .footer-link-address {
   color: var(--accent-filters-color);
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 2;
-  letter-spacing: 0.03em;
+  @include font (14px, 500, 24px, 0.03em);  
 }
 
 .footer-link-tel {
@@ -72,10 +63,7 @@
 .footer-socials-title {
   margin-bottom: 20px;
   color: var(--accent-filters-color);
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+  @include font (14px, 700, 16px, 0.03em);
   text-transform: uppercase;
 }
 
@@ -115,11 +103,8 @@
 .footer-spam-title {
   display: flex;
   margin-bottom: 20px;
-  color: var(--accent-filters-color);   
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+  color: var(--accent-filters-color);
+  @include font (14px, 700, 16px, 0.03em);   
   text-transform: uppercase;        
 }
 
@@ -138,11 +123,8 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;      
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 1.25;    
-  letter-spacing: 0.03em;    
+  border-radius: 4px;   
+  @include font (16px, 500, 20px, 0.03em);  
   }         
 
 .spam-btn {      
@@ -156,10 +138,7 @@
   color: var(--accent-filters-color);
   background: var(--accent-color);
   text-decoration: none;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.87; 
-  letter-spacing: 0.06em;
+  @include font (16px, 700, 30px, 0.06em);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);   
 }
 
