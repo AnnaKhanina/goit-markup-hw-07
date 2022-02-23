@@ -4,12 +4,12 @@
   background-color: var(--background-color);
 }
 
-.footer-container {
+.footer__container {
   display: flex;
   align-items: baseline;     
 }
 
-.footer-logo {
+.logo {
   display: inline-block;
   margin-bottom: 20px;
   color: var(--accent-color);
@@ -23,33 +23,29 @@
 
 .footer-address-list {
   font-style: normal;
-  .footer-link-address {
+  .footer-address__link {
     color: var(--accent-filters-color);
     @include font (14px, 500, 24px, 0.03em);     
   }
 }
 
-.footer-address-item:not(:last-child) {
+.footer-address__item + .footer-address__item /*:not(:last-child)*/ {
   margin-bottom: 9px;
 }
 
-.footer-address-list .footer-link-address {
-  color: var(--accent-filters-color);
-  @include font (14px, 500, 24px, 0.03em);  
-}
 
-.footer-link-tel {
+.footer-mail__link {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  color: var(--link-list-color);
+  color: var(--address-list-color);  
   &:hover,
   &:focus {
   color: var(--accent-color);
   }
 }
 
-.footer-link-mail {
+.footer-tel__link {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  color: var(--address-list-color);  
+  color: var(--link-list-color);
   &:hover,
   &:focus {
   color: var(--accent-color);
@@ -60,7 +56,7 @@
   margin-left: 70px;
 }
 
-.footer-socials-title {
+.footer-socials__title {
   margin-bottom: 20px;
   color: var(--accent-filters-color);
   @include font (14px, 700, 16px, 0.03em);
@@ -71,7 +67,11 @@
   @extend %align-list;
 }
 
-.footer-socials-link {
+.footer-socials__item + .footer-socials__item {
+  margin-left: 10px;
+}
+
+.footer-socials__link {
   @extend %align-list;
   justify-content: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -86,11 +86,7 @@
   }
 }
 
-.footer-socials-item + .footer-socials-item {
-    margin-left: 10px;
-  }
-
-.footer-socials-icon {
+.footer-socials__icon {
   width: 20px;
   height: 20px;
   fill: currentColor;
@@ -100,7 +96,7 @@
   margin-left: 93px; 
   }
 
-.footer-spam-title {
+.footer-spam__title {
   display: flex;
   margin-bottom: 20px;
   color: var(--accent-filters-color);
@@ -112,7 +108,7 @@
   display: flex;                 
 }
 
-.spam-email-input {
+.footer-spam-email__input {
   @extend %align-list;
   padding-left: 16px;
   width: 358px;
@@ -127,7 +123,7 @@
   @include font (16px, 500, 20px, 0.03em);  
   }         
 
-.spam-btn {      
+.footer-spam__btn {      
   display: inline-flex;
   text-align: center;
   align-items: center;
@@ -142,7 +138,7 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);   
 }
 
-.spam-icon {    
+.footer-spam__icon {    
   margin-left: 10px;
   color: var(--accent-filters-color);  
 }
